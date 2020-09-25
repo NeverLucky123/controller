@@ -13,4 +13,7 @@ input.buttonA.onEvent(ButtonEvent.Click, function () {
     light.showAnimation(light.rainbowAnimation, 200)
     light.clear()
 })
+input.buttonB.onEvent(ButtonEvent.Up, function () {
+    makerController.player1.setButton(ArcadeButton.B, false)
+})
 input.setLoudSoundThreshold(255)
