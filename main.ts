@@ -4,10 +4,12 @@ input.onLoudSound(function () {
 input.buttonA.onEvent(ButtonEvent.Click, function () {
     makerController.player1.press(ArcadeButton.A)
     light.showAnimation(light.rainbowAnimation, 200)
+    music.baDing.play()
     light.clear()
 })
 input.buttonB.onEvent(ButtonEvent.Click, function () {
     makerController.player1.press(ArcadeButton.B)
     light.showAnimation(light.cometAnimation, 200)
+    music.baDing.play()
     light.clear()
 })
